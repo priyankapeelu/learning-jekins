@@ -33,6 +33,7 @@ pipeline {
     stage('Two') {
       options {
         ansiColor('xterm')
+        }
       environment {
          ENV_URL = "stage.google.com"
       }
@@ -46,5 +47,4 @@ pipeline {
       }
     }
   }
-}
 }
