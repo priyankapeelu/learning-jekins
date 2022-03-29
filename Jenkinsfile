@@ -11,9 +11,22 @@ pipeline {
 
     stage('One') {
       steps {
-        sh '''
-        I HATE YOU
-        '''
+            addShortText background: '', borderColor: '', color: '', link: '', text: 'ONE'
+            sh '''
+              echo hello1
+              echo hello2
+              echo ENV_URL = ${ENV_URL}
+            '''
+      }
+    }
+    stage('Two') {
+      environment {
+         ENV_URL = "stage.google.com"
+      }
+      steps {
+        echo "Two"
+        sh 'echo ENV_URL = ${ENV_URL}'
+        sh 'env'
       }
     }
 
