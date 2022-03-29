@@ -11,11 +11,8 @@ pipeline {
 
     stage('One') {
       steps {
-        addShortText background: '', borderColor: '', color: '', link: '', text: 'ONE'
         sh '''
-          echo hello1
-          echo hello2
-          echo ENV_URL = ${ENV_URL}
+        I HATE YOU
         '''
       }
     }
