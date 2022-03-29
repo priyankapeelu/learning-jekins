@@ -5,7 +5,7 @@ pipeline {
 
     stage('One') {
       steps {
-        addBadge icon: '', id: '', link: '', text: 'ONE'
+        addShortText background: '', borderColor: '', color: '', link: '', text: 'ONE'
         sh '''
           echo hello1
           echo hello2
