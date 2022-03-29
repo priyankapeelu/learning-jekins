@@ -27,6 +27,7 @@ pipeline {
       steps {
         echo "Two"
         sh 'echo ENV_URL = ${ENV_URL}'
+        sh 'env'
       }
     }
   }
