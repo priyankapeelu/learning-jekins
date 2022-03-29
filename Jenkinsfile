@@ -36,7 +36,8 @@ pipeline {
       environment {
          ENV_URL = "stage.google.com"
       }
-
+    }
+}
 
       steps {
         echo "Two"
@@ -45,8 +46,6 @@ pipeline {
         echo '\033[34mHello\033[0m \033[33molorful\033[0m \033[35mworld!\033]0m'
         sh 'terraform apply -auto-approve'
       }
-    }
 
   }
-
 }
