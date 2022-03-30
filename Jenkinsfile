@@ -53,6 +53,7 @@ pipeline {
         echo '\033[34mHello\033[0m \033[33molorful\033[0m \033[35mworld!\033]0m'
         sh 'echo -e "\\e[31mHello"'
         //sh 'terraform apply -auto-approve'
+        sh 'mvn --version'
       }
     }
   }
