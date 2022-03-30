@@ -53,8 +53,4 @@ pipeline {
     }
   }
 
-  agent any
-
-
-
 }
