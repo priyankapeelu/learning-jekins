@@ -74,7 +74,7 @@ pipeline {
 
   stages {
 
-    stages('parallel') {
+    stage('parallel') {
       stages {
 
         stage('One') {
